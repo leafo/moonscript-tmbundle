@@ -20,6 +20,8 @@
 		|.*[-=]&gt;\s*$
 		|.*[\{\[]$)</string>
 	</dict>
+	<key>uuid</key>
+	<string>3696BFF9-3F8D-4323-BD85-1BA2715DBD2D</string>
 </dict>
 </plist>
 

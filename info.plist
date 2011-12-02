@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>MoonScript</string>
+	<key>ordering</key>
+	<array>
+		<string>D363822C-639B-4450-A21A-F45643A6940F</string>
+	</array>
+	<key>uuid</key>
+	<string>82A93C63-D9BC-4F70-84DB-B1D25004E55A</string>
+</dict>
+</plist>

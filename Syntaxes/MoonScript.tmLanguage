@@ -257,5 +257,7 @@
 
 	<key>scopeName</key>
 	<string>source.moonscript</string>
+	<key>uuid</key>
+	<string>D363822C-639B-4450-A21A-F45643A6940F</string>
 </dict>
 </plist>
