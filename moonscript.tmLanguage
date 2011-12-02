@@ -163,9 +163,23 @@
 
 		<dict>
 			<key>match</key>
+			<string>\(|\)</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
 			<string>\+|-|%|#|\*|\/|\^|==?|~=|!=|\\|:|,|;|\.|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)</string>
 			<key>name</key>
 			<string>keyword.operator.lua</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>{|}|\[|\]</string>
+			<key>name</key>
+			<string>storage.modifier</string>
 		</dict>
 
 		<dict>
@@ -194,7 +208,6 @@
 			<string>keyword.control</string>
 			<key>match</key>
 			<string>@[a-zA-Z_]\w+\b</string>
-			<!-- <string>\b(@)[a-zA-Z_]\w*\b</string>-->
 		</dict>
 
 		<dict>
@@ -212,24 +225,30 @@
 			<string>constant.language.boolean</string>
 		</dict>
 
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\.|\\)\b(function|repeat|local|end)\b(?!\s*:)</string>
+			<key>name</key>
+			<string>invalid.illegal</string>
+		</dict>
 
 		<dict>
 			<key>match</key>
-			<string>(?&lt;![^.]\.|:)\b(assert|collectgarbage|dofile|error|getfenv|getmetatable|ipairs|loadfile|loadstring|module|next|pairs|pcall|print|rawequal|rawget|rawset|require|select|setfenv|setmetatable|tonumber|tostring|type|unpack|xpcall)\b</string>
+			<string>(?&lt;![^.]\.|\\)\b(assert|collectgarbage|dofile|error|getfenv|getmetatable|ipairs|loadfile|loadstring|module|next|pairs|pcall|print|rawequal|rawget|rawset|require|select|setfenv|setmetatable|tonumber|tostring|type|unpack|xpcall)\b</string>
 			<key>name</key>
 			<string>support.function.lua</string>
 		</dict>
 
 		<dict>
 			<key>match</key>
-			<string>(?&lt;![^.]\.|:)\b(_G)\b</string>
+			<string>(?&lt;![^.]\.|\\)\b(_G)\b</string>
 			<key>name</key>
 			<string>support.constant</string>
 		</dict>
 
 		<dict>
 			<key>match</key>
-			<string>(?&lt;![^.]\.|:)\b(coroutine\.(create|resume|running|status|wrap|yield)|string\.(byte|char|dump|find|format|gmatch|gsub|len|lower|match|rep|reverse|sub|upper)|table\.(concat|insert|maxn|remove|sort)|math\.(abs|acos|asin|atan2?|ceil|cosh?|deg|exp|floor|fmod|frexp|ldexp|log|log10|max|min|modf|pow|rad|random|randomseed|sinh?|sqrt|tanh?)|io\.(close|flush|input|lines|open|output|popen|read|tmpfile|type|write)|os\.(clock|date|difftime|execute|exit|getenv|remove|rename|setlocale|time|tmpname)|package\.(cpath|loaded|loadlib|path|preload|seeall)|debug\.(debug|[gs]etfenv|[gs]ethook|getinfo|[gs]etlocal|[gs]etmetatable|getregistry|[gs]etupvalue|traceback))\b</string>
+			<string>(?&lt;![^.]\.|\\)\b(coroutine\.(create|resume|running|status|wrap|yield)|string\.(byte|char|dump|find|format|gmatch|gsub|len|lower|match|rep|reverse|sub|upper)|table\.(concat|insert|maxn|remove|sort)|math\.(abs|acos|asin|atan2?|ceil|cosh?|deg|exp|floor|fmod|frexp|ldexp|log|log10|max|min|modf|pow|rad|random|randomseed|sinh?|sqrt|tanh?)|io\.(close|flush|input|lines|open|output|popen|read|tmpfile|type|write)|os\.(clock|date|difftime|execute|exit|getenv|remove|rename|setlocale|time|tmpname)|package\.(cpath|loaded|loadlib|path|preload|seeall)|debug\.(debug|[gs]etfenv|[gs]ethook|getinfo|[gs]etlocal|[gs]etmetatable|getregistry|[gs]etupvalue|traceback))\b</string>
 			<key>name</key>
 			<string>support.function.library.lua</string>
 		</dict>
