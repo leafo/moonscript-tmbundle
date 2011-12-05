@@ -5,7 +5,7 @@ indentation to TextMate (and Sublime Text and any other compatible editors).
 
   [1]: http://moonscript.org/
 
-![screenshot](http://leafo.net/shotsmb/a07ea809f8b6bbdd212db5d5ddc3edb4.png)
+![screenshot](http://leafo.net/shotsmb/18ec35f7e2909c2a17b8ff37879f29b3.png)
 
 ## Installation
 
