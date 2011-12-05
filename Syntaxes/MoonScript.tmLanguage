@@ -193,7 +193,7 @@
 			<key>name</key>
 			<string>keyword.control</string>
 			<key>match</key>
-			<string>\b(if|then|else|elseif|export|import|from|switch|when|with|using|do|for|while)\b</string>
+			<string>\b(if|then|else|elseif|export|import|from|switch|when|with|using|do|for|while|return)\b</string>
 		</dict>
 
 		<dict>
