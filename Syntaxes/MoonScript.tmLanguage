@@ -193,7 +193,7 @@
 			<key>name</key>
 			<string>keyword.control</string>
 			<key>match</key>
-			<string>\b(if|then|else|elseif|export|import|from|switch|when|with|using|do|for|while|return)\b</string>
+			<string>\b(if|then|else|elseif|export|import|from|switch|when|with|using|do|for|while|return|local|unless|continue)\b</string>
 		</dict>
 
 		<dict>
@@ -227,7 +227,7 @@
 
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.|\\)\b(function|repeat|local|end)\b(?!\s*:)</string>
+			<string>(?&lt;!\.|\\)\b(function|repeat|end)\b(?!\s*:)</string>
 			<key>name</key>
 			<string>invalid.illegal</string>
 		</dict>
