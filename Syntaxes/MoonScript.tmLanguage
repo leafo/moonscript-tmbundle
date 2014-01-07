@@ -205,7 +205,7 @@
 
 		<dict>
 			<key>name</key>
-			<string>keyword.control</string>
+			<string>variable.parameter</string>
 			<key>match</key>
 			<string>@@?[a-zA-Z_]\w*\b</string>
 		</dict>
