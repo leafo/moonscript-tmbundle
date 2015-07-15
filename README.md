@@ -15,6 +15,6 @@ indentation to TextMate (and Sublime Text and any other compatible editors).
 
 ## Sublime Installation
 
-1. Add a `MoonScript` directory to your packages directory.
-2. Check out this repository there.
+You can install this package by running the following command in your Sublime Text Packages directory:
 
+    git clone https://github.com/leafo/moonscript-tmbundle.git MoonScript
